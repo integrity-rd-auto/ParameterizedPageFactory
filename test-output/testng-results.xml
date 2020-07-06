@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="19763" started-at="2020-07-06T20:09:27 IST" finished-at="2020-07-06T20:09:47 IST">
+    <groups>
+    </groups>
+    <test name="Test-firefox" duration-ms="10250" started-at="2020-07-06T20:09:27 IST" finished-at="2020-07-06T20:09:37 IST">
+      <class name="com.TestCases.framework.SearchText">
+        <test-method status="PASS" signature="MultiBrowser(java.lang.String)[pri:0, instance:com.TestCases.framework.SearchText@d44fc21]" name="MultiBrowser" is-config="true" duration-ms="8575" started-at="2020-07-06T20:09:27 IST" finished-at="2020-07-06T20:09:36 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MultiBrowser -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestCases.framework.SearchText@d44fc21]" name="setup" is-config="true" duration-ms="26" started-at="2020-07-06T20:09:36 IST" depends-on-methods="com.Base.framework.MultiBrowser.MultiBrowser" finished-at="2020-07-06T20:09:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.TestCases.framework.SearchText@d44fc21]" name="login" duration-ms="437" started-at="2020-07-06T20:09:36 IST" finished-at="2020-07-06T20:09:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="terminate()[pri:0, instance:com.TestCases.framework.SearchText@d44fc21]" name="terminate" is-config="true" duration-ms="1175" started-at="2020-07-06T20:09:36 IST" finished-at="2020-07-06T20:09:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- com.TestCases.framework.SearchText -->
+    </test> <!-- Test-firefox -->
+    <test name="Test-chrome" duration-ms="9493" started-at="2020-07-06T20:09:37 IST" finished-at="2020-07-06T20:09:47 IST">
+      <class name="com.TestCases.framework.SearchText">
+        <test-method status="PASS" signature="MultiBrowser(java.lang.String)[pri:0, instance:com.TestCases.framework.SearchText@4493d195]" name="MultiBrowser" is-config="true" duration-ms="6218" started-at="2020-07-06T20:09:37 IST" finished-at="2020-07-06T20:09:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MultiBrowser -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestCases.framework.SearchText@4493d195]" name="setup" is-config="true" duration-ms="0" started-at="2020-07-06T20:09:44 IST" depends-on-methods="com.Base.framework.MultiBrowser.MultiBrowser" finished-at="2020-07-06T20:09:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.TestCases.framework.SearchText@4493d195]" name="login" duration-ms="2521" started-at="2020-07-06T20:09:44 IST" finished-at="2020-07-06T20:09:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="terminate()[pri:0, instance:com.TestCases.framework.SearchText@4493d195]" name="terminate" is-config="true" duration-ms="751" started-at="2020-07-06T20:09:46 IST" finished-at="2020-07-06T20:09:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- com.TestCases.framework.SearchText -->
+    </test> <!-- Test-chrome -->
+  </suite> <!-- Suite -->
+</testng-results>
