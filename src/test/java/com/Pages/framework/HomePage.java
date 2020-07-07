@@ -23,6 +23,10 @@ public class HomePage {
 @FindBy(xpath="//input[@name='q']")
 	
 	WebElement searchBox;
+
+@FindBy(xpath="//h3[contains(text(),'Selenium.dev')]")
+
+WebElement seleniumDev;
 	
 	
 	public void insertSearchText() throws InterruptedException {
@@ -32,5 +36,11 @@ public class HomePage {
 		searchBox.submit();
 		Thread.sleep(300);
 	}
+	
+	public void selectSeleniumDev() throws InterruptedException {
+		
+		seleniumDev.click();
+	}
+		
 
 }

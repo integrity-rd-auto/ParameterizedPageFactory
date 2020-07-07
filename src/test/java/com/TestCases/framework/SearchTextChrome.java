@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import com.Base.framework.MultiBrowser;
 import com.Pages.framework.HomePage;
 
-public class SearchText extends MultiBrowser {
+public class SearchTextChrome extends MultiBrowser {
 	HomePage homepage;
 
 	@BeforeTest

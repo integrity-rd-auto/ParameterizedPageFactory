@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="19763" started-at="2020-07-06T20:09:27 IST" finished-at="2020-07-06T20:09:47 IST">
+  <suite name="Suite" duration-ms="16744" started-at="2020-07-07T06:15:41 IST" finished-at="2020-07-07T06:15:58 IST">
     <groups>
     </groups>
-    <test name="Test-firefox" duration-ms="10250" started-at="2020-07-06T20:09:27 IST" finished-at="2020-07-06T20:09:37 IST">
+    <test name="Test-firefox" duration-ms="8343" started-at="2020-07-07T06:15:41 IST" finished-at="2020-07-07T06:15:50 IST">
       <class name="com.TestCases.framework.SearchText">
-        <test-method status="PASS" signature="MultiBrowser(java.lang.String)[pri:0, instance:com.TestCases.framework.SearchText@d44fc21]" name="MultiBrowser" is-config="true" duration-ms="8575" started-at="2020-07-06T20:09:27 IST" finished-at="2020-07-06T20:09:36 IST">
+        <test-method status="PASS" signature="MultiBrowser(java.lang.String)[pri:0, instance:com.TestCases.framework.SearchText@23faf8f2]" name="MultiBrowser" is-config="true" duration-ms="6366" started-at="2020-07-07T06:15:41 IST" finished-at="2020-07-07T06:15:48 IST">
           <params>
             <param index="0">
               <value>
@@ -18,23 +18,97 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MultiBrowser -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestCases.framework.SearchText@d44fc21]" name="setup" is-config="true" duration-ms="26" started-at="2020-07-06T20:09:36 IST" depends-on-methods="com.Base.framework.MultiBrowser.MultiBrowser" finished-at="2020-07-06T20:09:36 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestCases.framework.SearchText@23faf8f2]" name="setup" is-config="true" duration-ms="24" started-at="2020-07-07T06:15:48 IST" depends-on-methods="com.Base.framework.MultiBrowser.MultiBrowser" finished-at="2020-07-07T06:15:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.TestCases.framework.SearchText@d44fc21]" name="login" duration-ms="437" started-at="2020-07-06T20:09:36 IST" finished-at="2020-07-06T20:09:36 IST">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.TestCases.framework.SearchText@23faf8f2]" name="login" duration-ms="469" started-at="2020-07-07T06:15:48 IST" finished-at="2020-07-07T06:15:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="terminate()[pri:0, instance:com.TestCases.framework.SearchText@d44fc21]" name="terminate" is-config="true" duration-ms="1175" started-at="2020-07-06T20:09:36 IST" finished-at="2020-07-06T20:09:37 IST">
+        <test-method status="FAIL" signature="selectSeleniumDevLink()[pri:0, instance:com.TestCases.framework.SearchText@23faf8f2]" name="selectSeleniumDevLink" duration-ms="25" started-at="2020-07-07T06:15:48 IST" finished-at="2020-07-07T06:15:48 IST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //h3[contains(text(),'Selenium.dev')]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-O3E0A86', ip: '192.168.2.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 32584, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fa6ad2b3-5a4c-4165-9670-b7e60b9314b6
+*** Element info: {Using=xpath, value=//h3[contains(text(),'Selenium.dev')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //h3[contains(text(),'Selenium.dev')]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-O3E0A86', ip: '192.168.2.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 32584, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fa6ad2b3-5a4c-4165-9670-b7e60b9314b6
+*** Element info: {Using=xpath, value=//h3[contains(text(),'Selenium.dev')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy10.click(Unknown Source)
+at com.Pages.framework.HomePage.selectSeleniumDev(HomePage.java:42)
+at com.TestCases.framework.SearchText.selectSeleniumDevLink(SearchText.java:33)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSeleniumDevLink -->
+        <test-method status="PASS" signature="terminate()[pri:0, instance:com.TestCases.framework.SearchText@23faf8f2]" name="terminate" is-config="true" duration-ms="1290" started-at="2020-07-07T06:15:48 IST" finished-at="2020-07-07T06:15:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
       </class> <!-- com.TestCases.framework.SearchText -->
     </test> <!-- Test-firefox -->
-    <test name="Test-chrome" duration-ms="9493" started-at="2020-07-06T20:09:37 IST" finished-at="2020-07-06T20:09:47 IST">
+    <test name="Test-chrome" duration-ms="8131" started-at="2020-07-07T06:15:50 IST" finished-at="2020-07-07T06:15:58 IST">
       <class name="com.TestCases.framework.SearchText">
-        <test-method status="PASS" signature="MultiBrowser(java.lang.String)[pri:0, instance:com.TestCases.framework.SearchText@4493d195]" name="MultiBrowser" is-config="true" duration-ms="6218" started-at="2020-07-06T20:09:37 IST" finished-at="2020-07-06T20:09:44 IST">
+        <test-method status="PASS" signature="MultiBrowser(java.lang.String)[pri:0, instance:com.TestCases.framework.SearchText@57e1b0c]" name="MultiBrowser" is-config="true" duration-ms="4412" started-at="2020-07-07T06:15:50 IST" finished-at="2020-07-07T06:15:54 IST">
           <params>
             <param index="0">
               <value>
@@ -45,15 +119,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MultiBrowser -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestCases.framework.SearchText@4493d195]" name="setup" is-config="true" duration-ms="0" started-at="2020-07-06T20:09:44 IST" depends-on-methods="com.Base.framework.MultiBrowser.MultiBrowser" finished-at="2020-07-06T20:09:44 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestCases.framework.SearchText@57e1b0c]" name="setup" is-config="true" duration-ms="1" started-at="2020-07-07T06:15:54 IST" depends-on-methods="com.Base.framework.MultiBrowser.MultiBrowser" finished-at="2020-07-07T06:15:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.TestCases.framework.SearchText@4493d195]" name="login" duration-ms="2521" started-at="2020-07-06T20:09:44 IST" finished-at="2020-07-06T20:09:46 IST">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.TestCases.framework.SearchText@57e1b0c]" name="login" duration-ms="1963" started-at="2020-07-07T06:15:54 IST" finished-at="2020-07-07T06:15:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="terminate()[pri:0, instance:com.TestCases.framework.SearchText@4493d195]" name="terminate" is-config="true" duration-ms="751" started-at="2020-07-06T20:09:46 IST" finished-at="2020-07-06T20:09:47 IST">
+        <test-method status="PASS" signature="selectSeleniumDevLink()[pri:0, instance:com.TestCases.framework.SearchText@57e1b0c]" name="selectSeleniumDevLink" duration-ms="752" started-at="2020-07-07T06:15:56 IST" finished-at="2020-07-07T06:15:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSeleniumDevLink -->
+        <test-method status="PASS" signature="terminate()[pri:0, instance:com.TestCases.framework.SearchText@57e1b0c]" name="terminate" is-config="true" duration-ms="995" started-at="2020-07-07T06:15:57 IST" finished-at="2020-07-07T06:15:58 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->

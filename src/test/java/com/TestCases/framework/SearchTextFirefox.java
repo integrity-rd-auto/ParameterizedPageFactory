@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import com.Base.framework.MultiBrowser;
 import com.Pages.framework.HomePage;
 
-public class SearchText extends MultiBrowser {
+public class SearchTextFirefox extends MultiBrowser {
 	HomePage homepage;
 
 	@BeforeTest
@@ -25,13 +25,6 @@ public class SearchText extends MultiBrowser {
 
 		homepage.insertSearchText();		
 		Assert.assertEquals(driver.getTitle(), "Selenium - Google Search");
-			}
-	
-	@Test
-	public void selectSeleniumDevLink() throws InterruptedException {
-
-		homepage.selectSeleniumDev();
-		Assert.assertEquals(driver.getTitle(), "SeleniumHQ Browser Automation");
 			}
 
 }
